@@ -7,7 +7,7 @@
 
 3. 为vscode配置一下只显示哪些文件拓展名，清理视野。(Unity/.vscode/settings.json)
 
-4. 具体对于ET的编译在mac.run.sh
+4. 具体对于ET的编译在mac.compile.sh
 > 自行修改FrameworkPathOverride的路径, 这个路径不是上面的路径,而是你下载mono安装到的地方,按照例子应该能找到
 ```sh
 export FrameworkPathOverride=/Library/Frameworks/Mono.framework/Versions/6.12.0/lib/mono/4.7.1-api
