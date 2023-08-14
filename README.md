@@ -1,9 +1,14 @@
 
 ## Mac 使用vscode的相关
 1. 下载对应或者最新的.net和mono(非visual studio channel)
+> 注意！https://www.mono-project.com/download/stable/ 去这里下载6.12.0那个灰色的按钮（写着“Stable channel” ）的mono，不要下载visual studio channel的，不然会有问题。
+
 2. 剩下主要是路径问题，先安装vscode的C#插件,然后去~/.omnisharp/omnisharp.json中配置mono的路径，和添加对应配置. [具体说明link](Unity/.vscode/README.md)
+
 3. 为vscode配置一下只显示哪些文件拓展名，清理视野。(Unity/.vscode/settings.json)
+
 4. 具体对于ET的编译在mac.run.sh
+> 自行修改FrameworkPathOverride的路径, 这个路径不是上面的路径,而是你下载mono安装到的地方,按照例子应该能找到
 ```sh
 export FrameworkPathOverride=/Library/Frameworks/Mono.framework/Versions/6.12.0/lib/mono/4.7.1-api
 dotnet build ./Unity/Unity.AllHotfix.csproj
