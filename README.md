@@ -11,3 +11,11 @@ dotnet build ./Unity/Unity.AllModel.csproj
 msbuild ./Unity/Unity.AllHotfix.csproj
 msbuild ./Unity/Unity.AllModel.csproj
 ```
+
+按目前的文件结构复杂到ET项目当中，然后 CMD + shift + B 就能执行。
+
+看看提示缺少什么文件或者路径哪里错误来慢慢把流程做好。  
+
+### ISSUES
+任何问题直接到issues那里发，慢慢完善这方面的体验。  
+比如直接做个vscode插件来完成这方面的工作，目前还是手动的。
